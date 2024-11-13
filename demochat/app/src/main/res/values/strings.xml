@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">demo chat</string>
+    <string name="text_nation">Việt Nam</string>
+    <string name="input_password">Mật Khẩu</string>
+    <string name="text_phone">Nhập số điện thoại của bạn</string>
+    <string name="input_phone">Số điện thoại</string>
+    <string name="text_input_otp">Nhập mã OTP đã được gửi đến số điện thoại của bạn</string>
+    <string name="text_note_otp">Chúng tôi sẽ gửi một OTP đến cho bạn vào số điện thoại này</string>
+    <string name="text_label_otp">Xác minh số điện thoại</string>
+    <string name="next">Tiếp</string>
+    <string name="verification_otp">Xác minh OTP</string>
+    <string name="no_otp">Không nhận được OTP?</string>
+    <string name="resend_otp">GỬI LẠI OTP</string>
+
+</resources>
