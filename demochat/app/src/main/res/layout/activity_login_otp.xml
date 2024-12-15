@@ -6,9 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:overScrollMode="never"
     android:fitsSystemWindows="true"
-    android:padding="@dimen/_16sdp"
+    android:padding="16dp"
     android:scrollbars="none"
-    tools:context=".LoginPhoneNumberActivity">
+    tools:context=".LoginOtpActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,8 +19,8 @@
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_120sdp"
             android:contentDescription="@string/app_name"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:src="@drawable/icon_email"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:src="@drawable/chat_icon"
             app:tint="@color/my_primary"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,10 +40,10 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/otpNote"
+            android:id="@+id/tv_input_phoneNumber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/text_input_otp"
+            android:text="@string/enter_otp_s_t_y_phone_number"
             android:gravity="center"
             android:layout_marginStart="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_15sdp"
@@ -55,7 +55,7 @@
             app:layout_constraintEnd_toEndOf="parent"/>
 
         <TextView
-            android:id="@+id/notePhoneNumber"
+            android:id="@+id/tv_phoneNumberShow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -67,22 +67,22 @@
             android:hint="Nơi số điện thoại hiện lên"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/otpNote" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_input_phoneNumber" />
 
         <LinearLayout
             android:id="@+id/inputCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/notePhoneNumber"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phoneNumberShow"
             android:layout_marginTop="@dimen/_10sdp"
             android:gravity="center"
             android:orientation="horizontal">
             <EditText
-                android:id="@+id/inputCode1"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_45sdp"
+                android:id="@+id/edt_otp1"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:gravity="center"
-                android:hint="_"
+                android:hint="@string/gach_chan"
                 android:background="@null"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -91,14 +91,14 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textColorHint="@color/colorTextPrimary"
                 android:textStyle="bold"
-                android:textSize="@dimen/_15ssp"
+                android:textSize="@dimen/_13ssp"
                 tools:ignore="LabelFor"/>
             <EditText
-                android:id="@+id/inputCode2"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_45sdp"
+                android:id="@+id/edt_otp2"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:gravity="center"
-                android:hint="_"
+                android:hint="@string/gach_chan"
                 android:background="@null"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -107,14 +107,14 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textColorHint="@color/colorTextPrimary"
                 android:textStyle="bold"
-                android:textSize="@dimen/_15ssp"
+                android:textSize="@dimen/_13ssp"
                 tools:ignore="LabelFor"/>
             <EditText
-                android:id="@+id/inputCode3"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_45sdp"
+                android:id="@+id/edt_otp3"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:gravity="center"
-                android:hint="_"
+                android:hint="@string/gach_chan"
                 android:background="@null"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -123,14 +123,14 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textColorHint="@color/colorTextPrimary"
                 android:textStyle="bold"
-                android:textSize="@dimen/_15ssp"
+                android:textSize="@dimen/_13ssp"
                 tools:ignore="LabelFor"/>
             <EditText
-                android:id="@+id/inputCode4"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_45sdp"
+                android:id="@+id/edt_otp4"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:gravity="center"
-                android:hint="_"
+                android:hint="@string/gach_chan"
                 android:background="@null"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -139,14 +139,14 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textColorHint="@color/colorTextPrimary"
                 android:textStyle="bold"
-                android:textSize="@dimen/_15ssp"
+                android:textSize="@dimen/_13ssp"
                 tools:ignore="LabelFor"/>
             <EditText
-                android:id="@+id/inputCode5"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_45sdp"
+                android:id="@+id/edt_otp5"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:gravity="center"
-                android:hint="_"
+                android:hint="@string/gach_chan"
                 android:background="@null"
                 android:imeOptions="actionNext"
                 android:importantForAutofill="no"
@@ -155,14 +155,14 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textColorHint="@color/colorTextPrimary"
                 android:textStyle="bold"
-                android:textSize="@dimen/_15ssp"
+                android:textSize="@dimen/_13ssp"
                 tools:ignore="LabelFor"/>
             <EditText
-                android:id="@+id/inputCode6"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_45sdp"
+                android:id="@+id/edt_otp6"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:gravity="center"
-                android:hint="_"
+                android:hint="@string/gach_chan"
                 android:background="@null"
                 android:imeOptions="actionDone"
                 android:importantForAutofill="no"
@@ -171,7 +171,7 @@
                 android:textColor="@color/colorTextPrimary"
                 android:textColorHint="@color/colorTextPrimary"
                 android:textStyle="bold"
-                android:textSize="@dimen/_15ssp"
+                android:textSize="@dimen/_13ssp"
                 tools:ignore="LabelFor"/>
         </LinearLayout>
         <View
@@ -180,7 +180,7 @@
             android:layout_height="@dimen/_2sdp"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:background="@color/light_gray"
             app:layout_constraintTop_toBottomOf="@id/inputCode"
             app:layout_constraintStart_toStartOf="parent"
@@ -194,18 +194,18 @@
             android:layout_marginTop="@dimen/_16sdp"
             android:gravity="center"
             android:padding="@dimen/_5sdp"
-            android:text="@string/no_otp"
-            android:textSize="@dimen/_14ssp"
+            android:text="@string/didn_t_receive_the_otp"
+            android:textSize="@dimen/_12ssp"
             android:textColor="@color/black"
-            app:layout_constraintEnd_toStartOf="@+id/reSendOTP"
+            app:layout_constraintEnd_toStartOf="@+id/tv_reSendOTP"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/divider2" />
 
         <TextView
-            android:id="@+id/reSendOTP"
+            android:id="@+id/tv_reSendOTP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_1sdp"
             android:layout_marginTop="@dimen/_16sdp"
             android:layout_marginEnd="@dimen/_35sdp"
             android:gravity="center"
@@ -213,18 +213,18 @@
             android:text="@string/resend_otp"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
-            android:textSize="@dimen/_14ssp"
+            android:textSize="@dimen/_13ssp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/question"
             app:layout_constraintTop_toBottomOf="@id/divider2" />
 
         <Button
-            android:id="@+id/nextButtonOTP"
+            android:id="@+id/btn_verifyOTP"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_16sdp"
             android:text="@string/next"
-            android:textSize="@dimen/_15ssp"
+            android:textSize="@dimen/_14ssp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

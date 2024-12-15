@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="statusBar">#182AB1</color>
+    <color name="statusBar">#FFFFFF</color>
 
-    <color name="my_primary">#570AEB</color>
-    <color name="my_secondary">#EE20F8</color>
+    <color name="my_primary_1">#570AEB</color>
+    <color name="my_secondary">#3F55FF</color>
     <color name="my_icon">#6D4776</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="colorTextPrimary">#000000</color>
-
-    <color name="off_light">#FDFDFD</color>
+    <color name="my_primary">#570AEB</color>
+    <color name="off_light">#FFFFFF</color>
     <color name="light_gray">#B6B6B6</color>
 
     <color name="pink">#EE20F8</color>
     <color name="blue">#570AEB</color>
     <color name="colorAccent">#EF5F5F</color>
+    <color name="semi_transparent_black">#80E2E2E2</color>
+    <color name="semi_transparent_white">#80FFFFFF</color>
+
+    <color name="color_selected">#570AEB</color>
+    <color name="color_unselected">#808080</color>
+
+    <color name="chat_color_sender">#FFFFFF</color>
+    <color name="chat_color_receiver">#E57AF6</color>
 </resources>

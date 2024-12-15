@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_sender"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:visibility="gone"
+        android:src="@drawable/ic_person"/>
+
+    <LinearLayout
+        android:id="@+id/layout_message_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_rounded_chat_message"
+        android:backgroundTint="@color/chat_color_sender"
+        android:padding="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/profile_image_sender"
+        android:layout_marginEnd="@dimen/_50sdp">
+
+        <TextView
+            android:id="@+id/tv_message_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/tv_sender_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/light_gray"
+            android:paddingTop="4dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_message_receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_rounded_chat_message"
+        android:backgroundTint="@color/chat_color_receiver"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/tv_message_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/tv_receiver_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/light_gray"
+            android:paddingTop="4dp" />
+    </LinearLayout>
+
+</RelativeLayout>

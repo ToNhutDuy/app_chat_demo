@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/icon_search"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_function"
+        android:title="@string/function"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/icon_more">
+        <menu>
+            <item
+                android:id="@+id/video_call"
+                android:title="@string/video_call"
+                android:icon="@drawable/icon_video_cam"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/logout"
+                android:title="@string/logout"
+                android:icon="@drawable/icon_logout"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+</menu>

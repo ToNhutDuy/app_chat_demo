@@ -9,14 +9,67 @@
         <item name="colorSecondaryVariant">@color/my_secondary</item>
         <item name="colorOnSecondary">@color/black</item>
 
+        <item name="android:windowBackground">@color/white</item>
+
+    </style>
+
+    <style name="Base.Theme.DemoChat" parent="Theme.AppCompat.Light" >
+        <item name="colorPrimary">@color/off_light</item>
+        <item name="colorPrimaryVariant">@color/off_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/my_secondary</item>
+        <item name="colorSecondaryVariant">@color/my_secondary</item>
+        <item name="colorOnSecondary">@color/black</item>
+
         <item name="android:windowBackground">@color/off_light</item>
-        
-        <item name="android:statusBarColor">@color/statusBar</item>
+    </style>
+    <!-- Theme tùy chỉnh cho ActionBar -->
+    <style name="CustomActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Thay đổi màu nền của ActionBar -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+
+        <!-- Thay đổi màu chữ của ActionBar -->
+        <item name="android:textColorPrimary">@color/blue</item>
+
+        <!-- Thay đổi icon ActionBar -->
+        <item name="android:icon">@color/blue</item>
+
+        <!-- Tùy chỉnh hình dạng của ActionBar -->
+        <item name="actionBarStyle">@style/CustomActionBarStyle</item>
     </style>
 
-    <style name="Base.Theme.DemoChat" parent="Theme.AppCompat.Light" />
-    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
-
+    <!-- Tạo style riêng cho ActionBar -->
+    <style name="CustomActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@drawable/flag_vietnam</item>
+        <item name="android:titleTextStyle">@style/CustomActionBarTitleText</item>
     </style>
 
+    <!-- Tùy chỉnh tiêu đề ActionBar -->
+    <style name="CustomActionBarTitleText">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Ẩn thanh trạng thái và thanh điều hướng -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <!-- values-v29/themes.xml -->
+    <style name="MyApp">
+        <item name="android:navigationBarColor">
+            @android:color/transparent
+        </item>
+
+        <item name="android:statusBarColor">
+            @android:color/transparent
+        </item>
+
+        <item name="android:windowLightStatusBar">
+            true
+        </item>
+    </style>
 </resources>
